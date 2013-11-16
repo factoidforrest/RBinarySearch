@@ -41,7 +41,7 @@ puts "occurences of element 69: " + collection.col.count(69).to_s
 
 #Writeup
 #General Notes
-  #I should mention that I cheated a bit and used the elements integer value as it's identifier. I
+  #I should mention that I cheated a bit and used the elements integer value as its identifier. I
   #cannot think of any reason that would matter since the elements are identical
   #
   #This system is optimized for frequent use of the removeLargest() method.  Since the values are stored in
