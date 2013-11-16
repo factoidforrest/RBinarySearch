@@ -54,7 +54,12 @@ puts "occurences of element 69: " + collection.col.count(69).to_s
   #
 #Ideal Solution?
   #Different solutions are ideal for different problems, depending on what action is going to be the most
-  #frequent I.E. bottleneck.  I think this is close to ideal for frequent Pops of the largest value
+  #frequent I.E. bottleneck.  I think this is close to ideal for frequent Pops of the largest value, which is O(1)
+  #
+  #Unfortunately, insertions into the list shift the entire index, which is O(n) and very wasteful.
+  #
+  #in sumary, this implimentation is slow to insert and quick to pop
+  
 #Future Improvements
   #1:If the system was likely to experience many repeat values, I would create an object with an additional field
   #to store the number of occurences instead of adding duplicates.  
@@ -66,3 +71,5 @@ puts "occurences of element 69: " + collection.col.count(69).to_s
   #
   #3: TIMERS.  I want to know how fast the insertion is for different sizes of array. My computer just spent 15
   #minutes adding one million random values and showed no sign off slowing
+  #
+  #4: After research, I wish I had implimented a skip list.  It would be much faster to insert and remove.  
