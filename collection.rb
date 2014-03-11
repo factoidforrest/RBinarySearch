@@ -29,15 +29,15 @@ collection = Collection.new
 300.times do |n|
   puts "Inserted: " +  collection.insert(rand(1..300)).to_s  
 end
-puts "Inserted the only non random value: " + collection.insert(69).to_s
+puts "Inserted the only non random value: " + collection.insert(55).to_s
 
 puts collection.col.to_s
 puts "Size: " + collection.col.size.to_s
 puts "The largest value was " + collection.removeLargest.to_s + "  It was destroyed in the making of this print"
 puts "Size:" + collection.col.size.to_s
-puts "Occurences of element 69: " + collection.col.count(69).to_s
-puts "Removed by identifier/value: " + collection.remove(69).to_s 
-puts "occurences of element 69: " + collection.col.count(69).to_s
+puts "Occurences of element 55: " + collection.col.count(55).to_s
+puts "Removed by identifier/value: " + collection.remove(55).to_s 
+puts "occurences of element 55: " + collection.col.count(55).to_s
 
 #Writeup
 #General Notes
@@ -70,6 +70,6 @@ puts "occurences of element 69: " + collection.col.count(69).to_s
   #comparison done by my search() method at the mid point (m)  of the set.  
   #
   #3: TIMERS.  I want to know how fast the insertion is for different sizes of array. My computer just spent 15
-  #minutes adding one million random values and showed no sign off slowing
+  #minutes adding one million random values and showed no sign of slowing
   #
   #4: After research, I wish I had implimented a skip list.  It would be much faster to insert and remove.  
